@@ -1,0 +1,88 @@
+.button
+{
+    background-color: aqua;
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-family: "Segoe UI";
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.github
+{
+    background-color: #1da1f2;
+    font-size: 18px;
+    /*background-color: #ad01f8;*/
+}
+
+.github:hover
+{
+    animation: zoom, hover-color;
+    animation-fill-mode: forwards;
+    animation-duration: .3s;
+}
+
+@-webkit-keyframes zoom
+{
+    from {transform: scale(1, 1)}
+    to {transform: scale(1.3, 1.3)}
+}
+
+@-webkit-keyframes hover-color
+{
+    from {background-color: #1c8ad2}
+    to {background-color: aqua}
+}
+
+.github:active
+{
+    background-color: #1c8ad2;
+}
+
+.centered
+{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.centered-horizontally
+{
+    position: absolute;
+
+    left: 50%;
+
+    transform: translate(-50%, 0);
+}
+
+.bottom
+{
+    position: fixed;
+
+    bottom: 0%;
+}
+
+.main-font
+{
+    font-size: 14px;
+}
+
+body
+{
+    background: url("images/bg.png") repeat-y top;
+}
+
+.no-drag
+{
+    user-drag: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}

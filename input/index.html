@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text-Thing</title>
+    <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/form-styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet">
+    <script src="../scripts/button.js"></script>
+</head>
+<body>
+    <div class="centered">
+        <form class="nixie-font" action="redirect-to-display.php" onsubmit="onClick()">
+            <div class="form">
+                <div class="form-row">
+                    <span class="form-cell"><label>Width: </label></span>
+                    <span class="form-cell"><input id="x"></span>
+                </div>
+                <div class="form-row">
+                    <span class="form-cell"><label>Height: </label></span>
+                    <span class="form-cell"><input id="y"></span>
+                </div>
+                <div class="form-row">
+                    <span class="form-cell"><label>Space: </label></span>
+                    <span class="form-cell"><input id="space"></span>
+                </div>
+                <div class="form-row">
+                    <span class="form-cell"><label>Paragraphs: </label></span>
+                    <span class="form-cell"><input id="paragraphs"></span>
+                </div>
+            </div>
+            <div style="align-content: center">
+                <div class="suggested">Values between 1 and 10 are suggested.</div>
+                <button type="submit" name="submit" class="nixie-font">Generate</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

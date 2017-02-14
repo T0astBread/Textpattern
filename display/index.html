@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Text-Thing</title>
+        <link rel="icon" href="../favicon.ico">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <script src="../scripts/text-thing.js"></script>
+        <script src="../scripts/resize-handler.js"></script>
+    </head>
+    <body onresize="changeStyleIfRequired()">
+        <div class="centered" id="textContainer">
+            <pre class="main-font" id="text"></pre>
+            <div class="centered-horizontally">
+                <!--<a href="http://www.twitter.com/T0astBread" class="button twitter" style="margin-top: 1cm; margin-bottom: .75cm">Twitter</a>-->
+                <a href="http://www.github.com/T0astBread" class="button github" style="margin-top: 1cm; margin-bottom: .75cm">My GitHub</a>
+                <pre class="centered-horizontally" style="margin-bottom: .2cm">Not &copyT0astBread, 2016</pre>
+            </div>
+        </div>
+        <script type="text/javascript" language="JavaScript">
+            fullGenerate();
+            changeStyleIfRequired();
+        </script>
+    </body>
+</html>

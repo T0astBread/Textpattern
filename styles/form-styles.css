@@ -1,0 +1,82 @@
+@import "styles.css";
+
+div.form
+{
+    display: table;
+}
+
+div.form-row
+{
+    display: table-row;
+}
+
+span.form-cell
+{
+    display: table-cell;
+    text-align: right;
+}
+
+span.form-cell label
+{
+    margin-right: 30px;
+}
+
+input
+{
+    width: 80px;
+    border: 2px solid;
+    border-radius: 10px;
+
+    font-family: "Nixie One";
+    font-size: 64px;
+    text-align: center;
+}
+
+.suggested
+{
+    font-size: .25em;
+    margin-top: .8em;
+    font-weight: bolder;
+}
+
+button[type=submit]
+{
+    width: 500px;
+    padding: 20px;
+    margin-top: 40px;
+    /*margin-right: -100px;*/
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+button[type=submit]:hover
+{
+    animation: lowZoom, border;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes border
+{
+    from
+    {
+        border-radius: 5px;
+    }
+    to
+    {
+        border-radius: 100px;
+    }
+}
+
+@-webkit-keyframes lowZoom
+{
+    from
+    {
+        transform: scale(1, 1);
+    }
+    to
+    {
+        transform: scale(1.1, 1.1);
+    }
+}
