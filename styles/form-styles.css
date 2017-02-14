@@ -39,7 +39,7 @@ input
     font-weight: bolder;
 }
 
-button[type=submit]
+button
 {
     width: 500px;
     padding: 20px;
@@ -50,7 +50,7 @@ button[type=submit]
     background-color: transparent;
 }
 
-button[type=submit]:hover
+button:hover
 {
     animation: lowZoom, border;
     animation-duration: .3s;

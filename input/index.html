@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="centered">
-        <form class="nixie-font" action="redirect-to-display.php" onsubmit="onClick()">
+        <form class="nixie-font" onsubmit="onClick()">
             <div class="form">
                 <div class="form-row">
                     <span class="form-cell"><label>Width: </label></span>
@@ -32,7 +32,7 @@
             </div>
             <div style="align-content: center">
                 <div class="suggested">Values between 1 and 10 are suggested.</div>
-                <button type="submit" name="submit" class="nixie-font">Generate</button>
+                <button type="button" name="submit" onclick="onClick()" class="nixie-font">Generate</button>
             </div>
         </form>
     </div>

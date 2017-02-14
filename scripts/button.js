@@ -9,4 +9,5 @@ function onClick()
     window.sessionStorage.setItem("y", document.getElementById("y").value);
     window.sessionStorage.setItem("space", document.getElementById("space").value);
     window.sessionStorage.setItem("paragraphs", document.getElementById("paragraphs").value);
+    window.location = "../display/";
 }
